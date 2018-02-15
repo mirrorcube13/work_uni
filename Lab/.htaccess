@@ -1,0 +1,6 @@
+RewriteEngine on
+Options -Indexes
+RewriteCond %{REQUEST_URI} !front/*
+RewriteCond %{REQUEST_URI} !images/*
+RewriteBase /
+RewriteRule .* index.php [QSA,L]
