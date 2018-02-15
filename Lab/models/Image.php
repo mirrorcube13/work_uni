@@ -103,7 +103,7 @@ class Image extends Model
             imagecopyresampled($new, $img,0,0, 0,0, $new_size[0], $new_size[1], $src_size[0], $src_size[1]);
 
             $function = 'image' . $type;
-            $function($new, $pathToSave . DIRECTORY_SEPARATOR . $file_name, 9);
+            $function($new, $pathToSave . DIRECTORY_SEPARATOR . $file_name, 90);
             imagedestroy($new);
         }
     }
